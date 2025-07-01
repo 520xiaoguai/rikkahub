@@ -78,6 +78,8 @@ private fun computeAIIconByName(name: String): String? {
   val lowerName = name.lowercase()
   val result = when {
     PATTERN_OPENAI.containsMatchIn(lowerName) -> "openai.svg"
+    PATTERN_MICROSOFT.containsMatchIn(lowerName) -> "microsoft-color.svg"
+    PATTERN_COPILOT.containsMatchIn(lowerName) -> "copilot-color.svg"
     PATTERN_GEMINI.containsMatchIn(lowerName) -> "gemini-color.svg"
     PATTERN_GOOGLE.containsMatchIn(lowerName) -> "google-color.svg"
     PATTERN_ANTHROPIC.containsMatchIn(lowerName) -> "anthropic.svg"
